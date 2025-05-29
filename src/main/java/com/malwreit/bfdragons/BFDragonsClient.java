@@ -1,4 +1,4 @@
-package com.malwreit;
+package com.malwreit.bfdragons;
 
 import net.fabricmc.api.ClientModInitializer;
 

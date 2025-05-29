@@ -16,13 +16,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.malwreit.BFDragons"
+          "com.malwreit.bfdragons.BFDragons"
 		],
 		"fabric-datagen": [
-			"com.malwreit.BFDragonsDataGenerator"
+          "com.malwreit.bfdragons.BFDragonsDataGenerator"
 		],
 		"client": [
-			"com.malwreit.BFDragonsClient"
+          "com.malwreit.bfdragons.BFDragonsClient"
 		]
 	},
 	"mixins": [

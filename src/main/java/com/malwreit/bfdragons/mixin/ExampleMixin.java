@@ -1,4 +1,4 @@
-package com.malwreit.mixin;
+package com.malwreit.bfdragons.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
