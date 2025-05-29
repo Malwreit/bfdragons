@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bfdragons",
+	"version": "${version}",
+	"name": "BFDragons",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Malwreit"
+	],
+	"contact": {
+		"homepage": "https://malwreit.com/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bfdragons/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.malwreit.BFDragons"
+		],
+		"fabric-datagen": [
+			"com.malwreit.BFDragonsDataGenerator"
+		],
+		"client": [
+			"com.malwreit.BFDragonsClient"
+		]
+	},
+	"mixins": [
+		"bfdragons.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
