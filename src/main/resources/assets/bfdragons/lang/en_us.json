@@ -1,3 +1,8 @@
 {
-  "item.bfdragons.coin": "Coin"
+  "item.bfdragons.coin": "Coin",
+
+  "block.bfdragons.coin_pile": "Coin Pile",
+
+  "itemgroup.bfdragons.bfdragons_items": "BFDragons Items",
+  "itemgroup.bfdragons.bfdragons_blocks": "BFDragons Blocks"
 }

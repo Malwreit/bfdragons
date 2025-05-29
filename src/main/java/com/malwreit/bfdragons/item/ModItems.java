@@ -16,7 +16,7 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        com.malwreit.bfdragons.BFDragons.LOGGER.info("Registering Mod items for " + com.malwreit.bfdragons.BFDragons.MOD_ID);
+        com.malwreit.bfdragons.BFDragons.LOGGER.info("Registering Mod Items for " + com.malwreit.bfdragons.BFDragons.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
             entries.add(COIN);

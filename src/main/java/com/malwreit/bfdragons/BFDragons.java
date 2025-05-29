@@ -1,5 +1,7 @@
 package com.malwreit.bfdragons;
 
+import com.malwreit.bfdragons.block.ModBlocks;
+import com.malwreit.bfdragons.item.ModItemGroups;
 import com.malwreit.bfdragons.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +15,8 @@ public class BFDragons implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
+		ModBlocks.registerModBlock();
+		ModItemGroups.registerItemGroups();
 
 	}
 }
