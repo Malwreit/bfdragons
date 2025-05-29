@@ -17,9 +17,11 @@ public class ModBlocks {
             new Block(
                     AbstractBlock.Settings.create()
                             .strength(4f)
-                            .requiresTool().sounds(BlockSoundGroup.GLASS)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.GLASS)
             )
     );
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -18,6 +18,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.bfdragons.bfdragons_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.COIN);
+                        entries.add(ModItems.HAMMER);
                     }).build());
 
     public static final ItemGroup BFDRAGONS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
