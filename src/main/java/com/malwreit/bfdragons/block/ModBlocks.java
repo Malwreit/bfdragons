@@ -1,6 +1,7 @@
 package com.malwreit.bfdragons.block;
 
 import com.malwreit.bfdragons.BFDragons;
+import com.malwreit.bfdragons.block.custom.GrinderBlock;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -19,6 +20,15 @@ public class ModBlocks {
                             .strength(4f)
                             .requiresTool()
                             .sounds(BlockSoundGroup.GLASS)
+            )
+    );
+
+    public static final Block GRINDER = registerBlock("grinder",
+            new GrinderBlock(
+                    AbstractBlock.Settings.create()
+                            .strength(2f)
+                            .requiresTool()
+                            .sounds(BlockSoundGroup.DEEPSLATE_TILES)
             )
     );
 

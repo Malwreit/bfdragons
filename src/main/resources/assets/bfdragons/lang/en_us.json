@@ -1,8 +1,11 @@
 {
   "item.bfdragons.coin": "Coin",
   "item.bfdragons.hammer": "Hammer",
+  "item.bfdragons.cram": "Cram",
+  "item.bfdragons.finewood": "Finewood",
 
   "block.bfdragons.coin_pile": "Coin Pile",
+  "block.bfdragons.grinder": "Grinder",
 
   "itemgroup.bfdragons.bfdragons_items": "BFDragons Items",
   "itemgroup.bfdragons.bfdragons_blocks": "BFDragons Blocks"

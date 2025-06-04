@@ -19,6 +19,8 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.COIN);
                         entries.add(ModItems.HAMMER);
+                        entries.add(ModItems.CRAM);
+                        entries.add(ModItems.FINEWOOD);
                     }).build());
 
     public static final ItemGroup BFDRAGONS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -27,6 +29,7 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.bfdragons.bfdragons_blocks"))
                     .entries((displayContext, entries) -> {
                         entries.add(ModBlocks.COIN_PILE);
+                        entries.add(ModBlocks.GRINDER);
                     }).build());
 
     public static void registerItemGroups() {

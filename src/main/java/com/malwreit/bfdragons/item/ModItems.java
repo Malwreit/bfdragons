@@ -11,6 +11,8 @@ import net.minecraft.util.Identifier;
 public class ModItems {
     public static final Item COIN = registerItem("coin", new Item(new Item.Settings()));
     public static final Item HAMMER = registerItem("hammer", new HammerItem(new Item.Settings().maxDamage(32)));
+    public static final Item CRAM = registerItem("cram", new Item(new Item.Settings().food(ModFoodComponents.CRAM)));
+    public static final Item FINEWOOD = registerItem("finewood", new Item(new Item.Settings()));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(com.malwreit.bfdragons.BFDragons.MOD_ID, name), item);
