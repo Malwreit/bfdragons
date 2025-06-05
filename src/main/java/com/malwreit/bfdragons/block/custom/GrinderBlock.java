@@ -1,6 +1,6 @@
 package com.malwreit.bfdragons.block.custom;
 
-import com.malwreit.bfdragons.item.ModItems;
+import com.malwreit.bfdragons.util.ModTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.Entity;
@@ -21,20 +21,24 @@ public class GrinderBlock extends Block {
     }
 
     @Override
+    public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
+        if (entity instanceof ItemEntity itemEntity) {
+            if (isValidItem(itemEntity.getStack())) {
+                itemEntity.setStack(new ItemStack(Items.DIAMOND, itemEntity.getStack().getCount()));
+            }
+        }
+
+        super.onSteppedOn(world, pos, state, entity);
+    }
+
+    private boolean isValidItem(ItemStack stack) {
+        return stack.isIn(ModTags.Items.TRANSFORMABLE_ITEMS);
+    }
+
+    @Override
     protected ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, BlockHitResult hit) {
 
         world.playSound(player,pos, SoundEvents.BLOCK_GRINDSTONE_USE, SoundCategory.BLOCKS, 1f, 1f);
         return ActionResult.SUCCESS;
-    }
-
-    @Override
-    public void onSteppedOn(World world, BlockPos pos, BlockState state, Entity entity) {
-        if (entity instanceof ItemEntity itemEntity) {
-           if (itemEntity.getStack().getItem() == ModItems.COIN) {
-               itemEntity.setStack(new ItemStack(Items.DIAMOND, itemEntity.getStack().getCount()));
-           }
-        }
-
-        super.onSteppedOn(world, pos, state, entity);
     }
 }

@@ -1,6 +1,7 @@
 package com.malwreit.bfdragons;
 
 import com.malwreit.bfdragons.block.ModBlocks;
+import com.malwreit.bfdragons.item.ModFuelComponents;
 import com.malwreit.bfdragons.item.ModItemGroups;
 import com.malwreit.bfdragons.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -18,7 +19,6 @@ public class BFDragons implements ModInitializer {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlock();
 		ModItemGroups.registerItemGroups();
-
-		FuelRegistry.INSTANCE.add(ModItems.FINEWOOD, 600);
+		ModFuelComponents.registerFuelComponents();
 	}
 }
