@@ -14,10 +14,10 @@ import net.minecraft.util.Identifier;
 public class ModItemGroups {
     public static final ItemGroup BFDRAGONS_ITEMS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(BFDragons.MOD_ID, "bfdragons_items"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.COIN))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.STEEL))
                     .displayName(Text.translatable("itemgroup.bfdragons.bfdragons_items"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.COIN);
+                        entries.add(ModItems.STEEL);
                         entries.add(ModItems.HAMMER);
                         entries.add(ModItems.CRAM);
                         entries.add(ModItems.FINEWOOD);
@@ -25,19 +25,19 @@ public class ModItemGroups {
 
     public static final ItemGroup BFDRAGONS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(BFDragons.MOD_ID, "bfdragons_blocks"),
-            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.COIN_PILE))
+            FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.STEEL_BLOCK))
                     .displayName(Text.translatable("itemgroup.bfdragons.bfdragons_blocks"))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModBlocks.COIN_PILE);
-                        entries.add(ModBlocks.COIN_STAIRS);
-                        entries.add(ModBlocks.COIN_DOOR);
-                        entries.add(ModBlocks.COIN_WALL);
-                        entries.add(ModBlocks.COIN_FENCE);
-                        entries.add(ModBlocks.COIN_FENCE_GATE);
-                        entries.add(ModBlocks.COIN_PRESSURE_PLATE);
-                        entries.add(ModBlocks.COIN_SLAB);
-                        entries.add(ModBlocks.COIN_TRAPDOOR);
-                        entries.add(ModBlocks.COIN_BUTTON);
+                        entries.add(ModBlocks.STEEL_BLOCK);
+                        entries.add(ModBlocks.STEEL_STAIRS);
+                        entries.add(ModBlocks.STEEL_DOOR);
+                        entries.add(ModBlocks.STEEL_WALL);
+                        entries.add(ModBlocks.STEEL_FENCE);
+                        entries.add(ModBlocks.STEEL_FENCE_GATE);
+                        entries.add(ModBlocks.STEEL_PRESSURE_PLATE);
+                        entries.add(ModBlocks.STEEL_SLAB);
+                        entries.add(ModBlocks.STEEL_TRAPDOOR);
+                        entries.add(ModBlocks.STEEL_BUTTON);
 
                         entries.add(ModBlocks.GRINDER);
                         entries.add(ModBlocks.STEEL_LAMP);

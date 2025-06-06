@@ -21,20 +21,20 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
     @Override
     public void generate(RecipeExporter recipeExporter) {
-        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.COIN, RecipeCategory.DECORATIONS, ModBlocks.COIN_PILE);
+        offerReversibleCompactingRecipes(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModItems.STEEL, RecipeCategory.DECORATIONS, ModBlocks.STEEL_BLOCK);
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.COIN_PILE)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.STEEL_BLOCK)
                 .pattern("RRR")
                 .pattern("RRR")
                 .pattern("RRR")
-                .input('R', ModItems.COIN)
-                .criterion(hasItem(ModItems.COIN), conditionsFromItem(ModItems.COIN))
-                .offerTo(recipeExporter, Identifier.of(BFDragons.MOD_ID, "coin_pile_from_coin"));
+                .input('R', ModItems.STEEL)
+                .criterion(hasItem(ModItems.STEEL), conditionsFromItem(ModItems.STEEL))
+                .offerTo(recipeExporter, Identifier.of(BFDragons.MOD_ID, "steel_block_from_steel"));
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.COIN, 9)
-                .input(ModBlocks.COIN_PILE)
-                .criterion(hasItem(ModBlocks.COIN_PILE), conditionsFromItem(ModBlocks.COIN_PILE))
-                .offerTo(recipeExporter, Identifier.of(BFDragons.MOD_ID, "coin_pile_from_coin_shapeless"));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL, 9)
+                .input(ModBlocks.STEEL_BLOCK)
+                .criterion(hasItem(ModBlocks.STEEL_BLOCK), conditionsFromItem(ModBlocks.STEEL_BLOCK))
+                .offerTo(recipeExporter, Identifier.of(BFDragons.MOD_ID, "steel_block_from_steel_shapeless"));
 
     }
 }

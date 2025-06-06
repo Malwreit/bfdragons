@@ -8,7 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item COIN = registerItem("coin", new Item(new Item.Settings()));
+    public static final Item STEEL = registerItem("steel", new Item(new Item.Settings()));
     public static final Item HAMMER = registerItem("hammer", new HammerItem(new Item.Settings().maxDamage(32)));
     public static final Item CRAM = registerItem("cram", new Item(new Item.Settings().food(ModFoodComponents.CRAM)));
     public static final Item FINEWOOD = registerItem("finewood", new Item(new Item.Settings()));
@@ -21,7 +21,7 @@ public class ModItems {
         com.malwreit.bfdragons.BFDragons.LOGGER.info("Registering Mod Items for " + com.malwreit.bfdragons.BFDragons.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(COIN);
+            entries.add(STEEL);
         });
     }
 }

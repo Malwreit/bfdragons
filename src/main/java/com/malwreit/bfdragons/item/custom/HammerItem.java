@@ -25,7 +25,7 @@ public class HammerItem extends Item {
     public static final Map<Block, Block> HAMMER_MAP = Map.of(
             Blocks.STONE, Blocks.STONE_BRICKS,
             Blocks.END_STONE, Blocks.END_STONE_BRICKS,
-            Blocks.OAK_LOG, ModBlocks.COIN_PILE,
+            Blocks.OAK_LOG, ModBlocks.STEEL_BLOCK,
             Blocks.GOLD_BLOCK,  Blocks.NETHERITE_BLOCK
     );
 

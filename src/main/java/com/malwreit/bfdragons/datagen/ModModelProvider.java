@@ -15,17 +15,17 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        BlockStateModelGenerator.BlockTexturePool coinPile = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.COIN_PILE);
-        coinPile.stairs(ModBlocks.COIN_STAIRS);
-        coinPile.button(ModBlocks.COIN_BUTTON);
-        coinPile.fence(ModBlocks.COIN_FENCE);
-        coinPile.fenceGate(ModBlocks.COIN_FENCE_GATE);
-        coinPile.slab(ModBlocks.COIN_SLAB);
-        coinPile.pressurePlate(ModBlocks.COIN_PRESSURE_PLATE);
-        coinPile.wall(ModBlocks.COIN_WALL);
+        BlockStateModelGenerator.BlockTexturePool coinPile = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.STEEL_BLOCK);
+        coinPile.stairs(ModBlocks.STEEL_STAIRS);
+        coinPile.button(ModBlocks.STEEL_BUTTON);
+        coinPile.fence(ModBlocks.STEEL_FENCE);
+        coinPile.fenceGate(ModBlocks.STEEL_FENCE_GATE);
+        coinPile.slab(ModBlocks.STEEL_SLAB);
+        coinPile.pressurePlate(ModBlocks.STEEL_PRESSURE_PLATE);
+        coinPile.wall(ModBlocks.STEEL_WALL);
 
-        blockStateModelGenerator.registerDoor(ModBlocks.COIN_DOOR);
-        blockStateModelGenerator.registerTrapdoor(ModBlocks.COIN_TRAPDOOR);
+        blockStateModelGenerator.registerDoor(ModBlocks.STEEL_DOOR);
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.STEEL_TRAPDOOR);
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.GRINDER);
 
@@ -37,7 +37,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(ModItems.COIN, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRAM, Models.GENERATED);
         itemModelGenerator.register(ModItems.HAMMER, Models.GENERATED);
         itemModelGenerator.register(ModItems.FINEWOOD, Models.GENERATED);

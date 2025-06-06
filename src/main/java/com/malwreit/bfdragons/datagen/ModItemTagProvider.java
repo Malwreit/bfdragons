@@ -18,6 +18,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(ModTags.Items.TRANSFORMABLE_ITEMS)
                 .add(Items.COAL)
-                .add(ModItems.COIN);
+                .add(ModItems.STEEL);
     }
 }

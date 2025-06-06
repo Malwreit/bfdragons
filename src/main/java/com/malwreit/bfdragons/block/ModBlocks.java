@@ -14,7 +14,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
-    public static final Block COIN_PILE = registerBlock("coin_pile",
+    public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(
                     AbstractBlock.Settings.create()
                             .strength(4f)
@@ -22,6 +22,7 @@ public class ModBlocks {
                             .sounds(BlockSoundGroup.GLASS)
             )
     );
+
 
     public static final Block GRINDER = registerBlock("grinder",
             new GrinderBlock(
@@ -32,15 +33,15 @@ public class ModBlocks {
             )
     );
 
-    public static final Block COIN_STAIRS = registerBlock("coin_stairs",
-        new StairsBlock(ModBlocks.COIN_PILE.getDefaultState(),
+    public static final Block STEEL_STAIRS = registerBlock("steel_stairs",
+        new StairsBlock(ModBlocks.STEEL_BLOCK.getDefaultState(),
                 AbstractBlock.Settings.create()
                         .strength(2f)
                         .requiresTool()
         )
     );
 
-    public static final Block COIN_SLAB = registerBlock("coin_slab",
+    public static final Block STEEL_SLAB = registerBlock("steel_slab",
         new SlabBlock(
                 AbstractBlock.Settings.create()
                         .strength(2f)
@@ -48,7 +49,7 @@ public class ModBlocks {
         )
     );
 
-    public static final Block COIN_BUTTON = registerBlock("coin_button",
+    public static final Block STEEL_BUTTON = registerBlock("steel_button",
         new ButtonBlock(BlockSetType.IRON, 2,
                 AbstractBlock.Settings.create()
                         .strength(2f)
@@ -57,7 +58,7 @@ public class ModBlocks {
         )
     );
 
-    public static final Block COIN_PRESSURE_PLATE = registerBlock("coin_pressure_plate",
+    public static final Block STEEL_PRESSURE_PLATE = registerBlock("steel_pressure_plate",
         new PressurePlateBlock(BlockSetType.IRON,
                 AbstractBlock.Settings.create()
                         .strength(2f)
@@ -65,7 +66,7 @@ public class ModBlocks {
         )
     );
 
-    public static final Block COIN_FENCE = registerBlock("coin_fence",
+    public static final Block STEEL_FENCE = registerBlock("steel_fence",
         new FenceBlock(
                 AbstractBlock.Settings.create()
                         .strength(2f)
@@ -73,7 +74,7 @@ public class ModBlocks {
         )
     );
 
-    public static final Block COIN_FENCE_GATE = registerBlock("coin_fence_gate",
+    public static final Block STEEL_FENCE_GATE = registerBlock("steel_fence_gate",
         new FenceGateBlock(WoodType.OAK,
                 AbstractBlock.Settings.create()
                         .strength(2f)
@@ -81,7 +82,7 @@ public class ModBlocks {
         )
     );
 
-    public static final Block COIN_WALL = registerBlock("coin_wall",
+    public static final Block STEEL_WALL = registerBlock("steel_wall",
         new WallBlock(
                 AbstractBlock.Settings.create()
                         .strength(2f)
@@ -89,7 +90,7 @@ public class ModBlocks {
         )
     );
 
-    public static final Block COIN_DOOR = registerBlock("coin_door",
+    public static final Block STEEL_DOOR = registerBlock("steel_door",
         new DoorBlock(BlockSetType.OAK,
                 AbstractBlock.Settings.create()
                         .strength(2f)
@@ -98,7 +99,7 @@ public class ModBlocks {
         )
     );
 
-    public static final Block COIN_TRAPDOOR = registerBlock("coin_trapdoor",
+    public static final Block STEEL_TRAPDOOR = registerBlock("steel_trapdoor",
         new TrapdoorBlock(BlockSetType.OAK,
                 AbstractBlock.Settings.create()
                         .strength(2f)
@@ -128,6 +129,6 @@ public class ModBlocks {
         BFDragons.LOGGER.info("Registering Mod Blocks for " + BFDragons.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries ->
-                entries.add(ModBlocks.COIN_PILE));
+                entries.add(ModBlocks.STEEL_BLOCK));
     }
 }
