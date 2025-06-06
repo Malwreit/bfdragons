@@ -27,6 +27,16 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
     @Override
     public void generate() {
         addDrop(ModBlocks.COIN_PILE);
+        addDrop(ModBlocks.COIN_FENCE);
+        addDrop(ModBlocks.COIN_SLAB, slabDrops(ModBlocks.COIN_SLAB));
+        addDrop(ModBlocks.COIN_STAIRS);
+        addDrop(ModBlocks.COIN_WALL);
+        addDrop(ModBlocks.COIN_TRAPDOOR);
+        addDrop(ModBlocks.COIN_FENCE_GATE);
+        addDrop(ModBlocks.COIN_BUTTON);
+        addDrop(ModBlocks.COIN_DOOR, doorDrops(ModBlocks.COIN_DOOR));
+        addDrop(ModBlocks.COIN_PRESSURE_PLATE);
+
         addDrop(ModBlocks.GRINDER);
     }
 

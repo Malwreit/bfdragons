@@ -35,5 +35,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input(ModBlocks.COIN_PILE)
                 .criterion(hasItem(ModBlocks.COIN_PILE), conditionsFromItem(ModBlocks.COIN_PILE))
                 .offerTo(recipeExporter, Identifier.of(BFDragons.MOD_ID, "coin_pile_from_coin_shapeless"));
+
     }
 }
