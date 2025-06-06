@@ -21,6 +21,11 @@ public class ModItemGroups {
                         entries.add(ModItems.HAMMER);
                         entries.add(ModItems.CRAM);
                         entries.add(ModItems.FINEWOOD);
+
+                        entries.add(ModItems.STEEL_SWORD);
+                        entries.add(ModItems.STEEL_SHOVEL);
+                        entries.add(ModItems.STEEL_AXE);
+                        entries.add(ModItems.STEEL_PICKAXE);
                     }).build());
 
     public static final ItemGroup BFDRAGONS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

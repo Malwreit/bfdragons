@@ -13,6 +13,27 @@ public class ModItems {
     public static final Item CRAM = registerItem("cram", new Item(new Item.Settings().food(ModFoodComponents.CRAM)));
     public static final Item FINEWOOD = registerItem("finewood", new Item(new Item.Settings()));
 
+    public static final Item STEEL_SWORD = registerItem("steel_sword",
+            new SwordItem(ModToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.STEEL, 3, -3f) )
+            )
+    );
+    public static final Item STEEL_PICKAXE = registerItem("steel_pickaxe",
+            new PickaxeItem(ModToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.STEEL, 2, -2f) )
+            )
+    );
+    public static final Item STEEL_AXE = registerItem("steel_axe",
+            new AxeItem(ModToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.STEEL, 3,-3f) )
+            )
+    );
+    public static final Item STEEL_SHOVEL = registerItem("steel_shovel",
+            new ShovelItem(ModToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.STEEL, 1, -2f) )
+            )
+    );
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(com.malwreit.bfdragons.BFDragons.MOD_ID, name), item);
     }
