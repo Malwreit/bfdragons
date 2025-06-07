@@ -34,6 +34,39 @@ public class ModItems {
             )
     );
 
+    public static final Item STEEL_HELMET =registerItem("steel_helmet",
+            new ArmorItem(
+                    ModItemMaterials.STEEL_ARMOR_MATERIAL,
+                    ArmorItem.Type.HELMET,
+                    new Item.Settings()
+                            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))
+            )
+    );
+    public static final Item STEEL_CHESTPLATE =registerItem("steel_chestplate",
+            new ArmorItem(
+                    ModItemMaterials.STEEL_ARMOR_MATERIAL,
+                    ArmorItem.Type.CHESTPLATE,
+                    new Item.Settings()
+                            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))
+            )
+    );
+    public static final Item STEEL_LEGGINGS =registerItem("steel_leggings",
+            new ArmorItem(
+                    ModItemMaterials.STEEL_ARMOR_MATERIAL,
+                    ArmorItem.Type.LEGGINGS,
+                    new Item.Settings()
+                            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))
+            )
+    );
+    public static final Item STEEL_BOOTS =registerItem("steel_boots",
+            new ArmorItem(
+                    ModItemMaterials.STEEL_ARMOR_MATERIAL,
+                    ArmorItem.Type.BOOTS,
+                    new Item.Settings()
+                            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))
+            )
+    );
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(com.malwreit.bfdragons.BFDragons.MOD_ID, name), item);
     }

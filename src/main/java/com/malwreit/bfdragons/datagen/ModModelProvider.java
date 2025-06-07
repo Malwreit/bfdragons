@@ -6,6 +6,7 @@ import com.malwreit.bfdragons.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.util.Identifier;
 
 public class ModModelProvider extends FabricModelProvider {
@@ -46,5 +47,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.STEEL_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STEEL_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.STEEL_SHOVEL, Models.HANDHELD);
+
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_BOOTS);
     }
 }
