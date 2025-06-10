@@ -1,6 +1,7 @@
 package com.malwreit.bfdragons.item;
 
 import com.malwreit.bfdragons.item.custom.HammerItem;
+import com.malwreit.bfdragons.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -35,8 +36,8 @@ public class ModItems {
     );
 
     public static final Item STEEL_HELMET =registerItem("steel_helmet",
-            new ArmorItem(
-                    ModItemMaterials.STEEL_ARMOR_MATERIAL,
+            new ModArmorItem(
+                    ModArmorMaterials.STEEL_ARMOR_MATERIAL,
                     ArmorItem.Type.HELMET,
                     new Item.Settings()
                             .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(15))
@@ -44,7 +45,7 @@ public class ModItems {
     );
     public static final Item STEEL_CHESTPLATE =registerItem("steel_chestplate",
             new ArmorItem(
-                    ModItemMaterials.STEEL_ARMOR_MATERIAL,
+                    ModArmorMaterials.STEEL_ARMOR_MATERIAL,
                     ArmorItem.Type.CHESTPLATE,
                     new Item.Settings()
                             .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(15))
@@ -52,7 +53,7 @@ public class ModItems {
     );
     public static final Item STEEL_LEGGINGS =registerItem("steel_leggings",
             new ArmorItem(
-                    ModItemMaterials.STEEL_ARMOR_MATERIAL,
+                    ModArmorMaterials.STEEL_ARMOR_MATERIAL,
                     ArmorItem.Type.LEGGINGS,
                     new Item.Settings()
                             .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(15))
@@ -60,11 +61,21 @@ public class ModItems {
     );
     public static final Item STEEL_BOOTS =registerItem("steel_boots",
             new ArmorItem(
-                    ModItemMaterials.STEEL_ARMOR_MATERIAL,
+                    ModArmorMaterials.STEEL_ARMOR_MATERIAL,
                     ArmorItem.Type.BOOTS,
                     new Item.Settings()
                             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(15))
             )
+    );
+
+    public static final Item STEEL_CULTIVATOR = registerItem("steel_cultivator",
+            new ShovelItem(ModToolMaterials.STEEL, new Item.Settings()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.STEEL, 7, -3.2f) )
+            )
+    );
+
+    public static final Item STEEL_HORSE_ARMOR = registerItem("steel_horse_armor",
+        new AnimalArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1))
     );
 
     private static Item registerItem(String name, Item item) {

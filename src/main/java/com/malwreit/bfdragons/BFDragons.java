@@ -5,9 +5,10 @@ import com.malwreit.bfdragons.component.ModDataComponentsTypes;
 import com.malwreit.bfdragons.item.ModFuelComponents;
 import com.malwreit.bfdragons.item.ModItemGroups;
 import com.malwreit.bfdragons.item.ModItems;
+import com.malwreit.bfdragons.util.CultivatorUsageEvent;
 import net.fabricmc.api.ModInitializer;
 
-import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -22,5 +23,7 @@ public class BFDragons implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModFuelComponents.registerFuelComponents();
 		ModDataComponentsTypes.registerDataComponentTypes();
+
+		PlayerBlockBreakEvents.BEFORE.register(new CultivatorUsageEvent());
 	}
 }

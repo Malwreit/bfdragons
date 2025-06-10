@@ -41,6 +41,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.STEEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRAM, Models.GENERATED);
         itemModelGenerator.register(ModItems.HAMMER, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_CULTIVATOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.FINEWOOD, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.STEEL_SWORD, Models.HANDHELD);
@@ -52,5 +53,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.STEEL_BOOTS);
+
+        itemModelGenerator.register(ModItems.STEEL_HORSE_ARMOR, Models.GENERATED);
     }
 }

@@ -1,6 +1,7 @@
 {
   "item.bfdragons.steel": "Steel",
   "item.bfdragons.hammer": "Hammer",
+  "item.bfdragons.steel_cultivator": "Steel Cultivator",
   "item.bfdragons.cram": "Cram",
   "item.bfdragons.finewood": "Finewood",
 
@@ -8,6 +9,8 @@
   "item.bfdragons.steel_pickaxe": "Steel Pickaxe",
   "item.bfdragons.steel_axe": "Steel Axe",
   "item.bfdragons.steel_shovel": "Steel Shovel",
+
+  "item.bfdragons.steel_horse_armor": "Steel Horse Armor",
 
   "item.bfdragons.steel_helmet": "Steel Helmet",
   "item.bfdragons.steel_chestplate": "Steel Chestplate",
@@ -24,6 +27,7 @@
   "block.bfdragons.steel_trapdoor": "Steel Trapdoor",
   "block.bfdragons.steel_pressure_plate": "Steel Pressure Plate",
   "block.bfdragons.steel_button": "Steel Button",
+
 
   "block.bfdragons.grinder": "Grinder",
   "block.bfdragons.steel_lamp": "Steel Lamp",
