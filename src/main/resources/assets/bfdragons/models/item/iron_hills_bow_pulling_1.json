@@ -1,0 +1,6 @@
+{
+  "parent": "bfdragons:item/iron_hills_bow",
+  "textures": {
+    "layer0": "bfdragons:item/iron_hills_bow_pulling_1"
+  }
+}

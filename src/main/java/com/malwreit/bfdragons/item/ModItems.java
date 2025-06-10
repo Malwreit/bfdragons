@@ -77,11 +77,21 @@ public class ModItems {
     );
 
     public static final Item STEEL_HORSE_ARMOR = registerItem("steel_horse_armor",
-        new AnimalArmorItem(ModArmorMaterials.STEEL_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, new Item.Settings().maxCount(1))
+        new AnimalArmorItem(
+                ModArmorMaterials.STEEL_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false,
+                new Item.Settings()
+                        .maxCount(1))
     );
 
     public static final Item MALWREIT_SMITHING_TEMPLATE = registerItem("malwreit_armor_trim_smithing_template",
             SmithingTemplateItem.of(Identifier.of(BFDragons.MOD_ID, "malwreit"), FeatureFlags.VANILLA)
+    );
+
+    public static final Item IRON_HILLS_BOW = registerItem("iron_hills_bow",
+            new BowItem(
+                    new Item.Settings()
+                            .maxDamage(500)
+            )
     );
 
     private static Item registerItem(String name, Item item) {

@@ -1,0 +1,14 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "bfdragons:item/hammer"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "bfdragons:used": 1
+      },
+      "model": "bfdragons:item/hammer_used"
+    }
+  ]
+}
