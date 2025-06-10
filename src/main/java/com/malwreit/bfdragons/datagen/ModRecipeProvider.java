@@ -36,5 +36,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.STEEL_BLOCK), conditionsFromItem(ModBlocks.STEEL_BLOCK))
                 .offerTo(recipeExporter, Identifier.of(BFDragons.MOD_ID, "steel_block_from_steel_shapeless"));
 
+        offerSmithingTrimRecipe(recipeExporter, ModItems.MALWREIT_SMITHING_TEMPLATE, Identifier.of(BFDragons.MOD_ID, "malwreit"));
+
     }
 }

@@ -35,5 +35,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STEEL_CHESTPLATE)
                 .add(ModItems.STEEL_LEGGINGS)
                 .add(ModItems.STEEL_BOOTS);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.STEEL);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
+                .add(ModItems.MALWREIT_SMITHING_TEMPLATE);
     }
 }
