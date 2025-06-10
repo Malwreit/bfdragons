@@ -40,7 +40,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.STEEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRAM, Models.GENERATED);
-        itemModelGenerator.register(ModItems.HAMMER, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_CULTIVATOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.FINEWOOD, Models.GENERATED);
 
