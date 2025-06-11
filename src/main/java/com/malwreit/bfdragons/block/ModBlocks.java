@@ -3,6 +3,7 @@ package com.malwreit.bfdragons.block;
 import com.malwreit.bfdragons.BFDragons;
 import com.malwreit.bfdragons.block.custom.GrinderBlock;
 import com.malwreit.bfdragons.block.custom.SteelLampBlock;
+import com.malwreit.bfdragons.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
@@ -19,7 +20,7 @@ public class ModBlocks {
                     AbstractBlock.Settings.create()
                             .strength(4f)
                             .requiresTool()
-                            .sounds(BlockSoundGroup.GLASS)
+                            .sounds(ModSounds.STEEL_BLOCK_SOUNDS)
             )
     );
 

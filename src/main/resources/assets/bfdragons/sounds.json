@@ -1,0 +1,39 @@
+{
+  "hammer_use": {
+    "subtitle": "sounds.bfdragons.hammer_use",
+    "sounds": [
+      "bfdragons:hammer_use"
+    ]
+  },
+  "steel_block_break": {
+    "subtitle": "sounds.bfdragons.steel_block_break",
+    "sounds": [
+      "bfdragons:steel_block_break"
+    ]
+  },
+  "steel_block_fall": {
+    "subtitle": "sounds.bfdragons.steel_block_fall",
+    "sounds": [
+      "bfdragons:steel_block_fall"
+    ]
+  },
+  "steel_block_hit": {
+    "subtitle": "sounds.bfdragons.steel_block_hit",
+    "sounds": [
+      "bfdragons:steel_block_hit"
+    ]
+  },
+  "steel_block_place": {
+    "subtitle": "sounds.bfdragons.steel_block_place",
+    "sounds": [
+      "bfdragons:steel_block_place"
+    ]
+  },
+  "steel_block_step": {
+    "subtitle": "sounds.bfdragons.steel_block_step",
+    "sounds": [
+      "bfdragons:steel_block_step"
+    ]
+  }
+
+}
