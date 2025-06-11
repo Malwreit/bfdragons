@@ -8,7 +8,13 @@ import com.malwreit.bfdragons.item.ModItems;
 import com.malwreit.bfdragons.util.CultivatorUsageEvent;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
+import net.minecraft.entity.passive.SheepEntity;
+import net.minecraft.text.Text;
+import net.minecraft.util.ActionResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -25,5 +31,18 @@ public class BFDragons implements ModInitializer {
 		ModDataComponentsTypes.registerDataComponentTypes();
 
 		PlayerBlockBreakEvents.BEFORE.register(new CultivatorUsageEvent());
+
+		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
+			if (entity instanceof SheepEntity sheepEntity && !world.isClient) {
+				if(player.getMainHandStack().getItem() == ModItems.STEEL_SWORD) {
+					player.sendMessage(Text.literal("beka3"));
+					sheepEntity.addStatusEffect(new StatusEffectInstance(StatusEffects.POISON, 600, 2));
+				}
+
+				return ActionResult.PASS;
+			}
+
+			return ActionResult.PASS;
+		});
 	}
 }
