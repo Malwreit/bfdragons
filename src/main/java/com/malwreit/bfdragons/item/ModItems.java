@@ -83,8 +83,8 @@ public class ModItems {
                         .maxCount(1))
     );
 
-    public static final Item MALWREIT_SMITHING_TEMPLATE = registerItem("malwreit_armor_trim_smithing_template",
-            SmithingTemplateItem.of(Identifier.of(BFDragons.MOD_ID, "malwreit"), FeatureFlags.VANILLA)
+    public static final Item IRON_HILLS_SMITHING_TEMPLATE = registerItem("iron_hills_armor_trim_smithing_template",
+            SmithingTemplateItem.of(Identifier.of(BFDragons.MOD_ID, "iron_hills"), FeatureFlags.VANILLA)
     );
 
     public static final Item IRON_HILLS_BOW = registerItem("iron_hills_bow",

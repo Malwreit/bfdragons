@@ -32,7 +32,7 @@ public class ModItemGroups {
                         entries.add(ModItems.STEEL_LEGGINGS);
                         entries.add(ModItems.STEEL_BOOTS);
 
-                        entries.add(ModItems.MALWREIT_SMITHING_TEMPLATE);
+                        entries.add(ModItems.IRON_HILLS_SMITHING_TEMPLATE);
                         entries.add(ModItems.IRON_HILLS_BOW);
 
                         entries.add(ModItems.STEEL_HORSE_ARMOR);

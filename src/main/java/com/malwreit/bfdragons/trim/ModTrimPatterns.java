@@ -14,10 +14,10 @@ import net.minecraft.util.Util;
 
 public class ModTrimPatterns {
     public static final RegistryKey<ArmorTrimPattern> MALWREIT = RegistryKey.of(RegistryKeys.TRIM_PATTERN,
-            Identifier.of(BFDragons.MOD_ID, "malwreit"));
+            Identifier.of(BFDragons.MOD_ID, "iron_hills"));
 
     public static void bootstrap(Registerable<ArmorTrimPattern> context) {
-        register(context, ModItems.MALWREIT_SMITHING_TEMPLATE, MALWREIT);
+        register(context, ModItems.IRON_HILLS_SMITHING_TEMPLATE, MALWREIT);
     }
 
     private static void register(Registerable<ArmorTrimPattern> context, Item item, RegistryKey<ArmorTrimPattern> key) {

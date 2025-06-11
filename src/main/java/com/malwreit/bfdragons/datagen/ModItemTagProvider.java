@@ -40,6 +40,6 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.STEEL);
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
-                .add(ModItems.MALWREIT_SMITHING_TEMPLATE);
+                .add(ModItems.IRON_HILLS_SMITHING_TEMPLATE);
     }
 }

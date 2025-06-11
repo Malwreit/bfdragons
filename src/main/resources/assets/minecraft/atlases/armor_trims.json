@@ -36,8 +36,8 @@
         "trims/models/armor/raiser_leggings",
         "trims/models/armor/host",
         "trims/models/armor/host_leggings",
-        "bfdragons:trims/models/armor/malwreit",
-        "bfdragons:trims/models/armor/malwreit_leggings"
+        "bfdragons:trims/models/armor/iron_hills",
+        "bfdragons:trims/models/armor/iron_hills_leggings"
 
       ],
       "palette_key": "trims/color_palettes/trim_palette",

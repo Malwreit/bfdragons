@@ -4,7 +4,7 @@
   "item.bfdragons.steel_cultivator": "Steel Cultivator",
   "item.bfdragons.cram": "Cram",
   "item.bfdragons.finewood": "Finewood",
-  "item.bfdragons.malwreit_armor_trim_smithing_template": "Malwreit Smithing Template",
+  "item.bfdragons.iron_hills_armor_trim_smithing_template": "Iron Hills Smithing Template",
   "item.bfdragons.iron_hills_bow": "Iron Hills Bow",
 
   "item.bfdragons.steel_sword": "Steel Sword",
@@ -35,7 +35,7 @@
   "block.bfdragons.steel_lamp": "Steel Lamp",
 
   "trim_material.bfdragons.steel": "Steel Material",
-  "trim_pattern.bfdragons.malwreit": "Malwreit Armor Pattern",
+  "trim_pattern.bfdragons.iron_hills": "Iron Hills Armor Pattern",
 
   "itemgroup.bfdragons.bfdragons_items": "BFDragons Items",
   "itemgroup.bfdragons.bfdragons_blocks": "BFDragons Blocks"

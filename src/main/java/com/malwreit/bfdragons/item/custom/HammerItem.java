@@ -57,12 +57,6 @@ public class HammerItem extends Item {
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
 
-        if (Screen.hasShiftDown()) {
-            tooltip.add(Text.translatable("tooltip.bfdragons.hammer.shift.down"));
-        } else {
-            tooltip.add(Text.translatable("tooltip.bfdragons.hammer"));
-        }
-
         if (stack.get(ModDataComponentsTypes.COORDINATES) != null) {
             tooltip.add(Text.literal("Last Block Changed " + stack.get(ModDataComponentsTypes.COORDINATES)));
         }
