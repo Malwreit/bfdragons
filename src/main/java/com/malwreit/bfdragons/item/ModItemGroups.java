@@ -36,6 +36,7 @@ public class ModItemGroups {
                         entries.add(ModItems.IRON_HILLS_BOW);
 
                         entries.add(ModItems.STEEL_HORSE_ARMOR);
+                        entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
                     }).build());
 
     public static final ItemGroup BFDRAGONS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,

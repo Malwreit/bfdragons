@@ -34,6 +34,13 @@
     "sounds": [
       "bfdragons:steel_block_step"
     ]
+  },
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "bfdragons:bar_brawl",
+        "stream": true
+      }
+    ]
   }
-
 }

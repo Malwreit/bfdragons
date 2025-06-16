@@ -3,6 +3,7 @@ package com.malwreit.bfdragons.item;
 import com.malwreit.bfdragons.BFDragons;
 import com.malwreit.bfdragons.item.custom.HammerItem;
 import com.malwreit.bfdragons.item.custom.ModArmorItem;
+import com.malwreit.bfdragons.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -92,6 +93,13 @@ public class ModItems {
                     new Item.Settings()
                             .maxDamage(500)
             )
+    );
+
+    public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
+        new Item(new Item.Settings()
+                .jukeboxPlayable(ModSounds.BAR_BRAWL_KEY)
+                .maxCount(1)
+        )
     );
 
     private static Item registerItem(String name, Item item) {
