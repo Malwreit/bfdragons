@@ -22,6 +22,17 @@
   "item.bfdragons.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.bfdragons.bar_brawl_music_disc.desc": "Bar Brawl",
 
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
+  "painting.bfdragons.trup.title": "Trup",
+  "painting.bfdragons.kac.title": "Kac",
+  "painting.bfdragons.glorp.title": "Glorp",
+  "painting.bfdragons.trup.author": "Malwreit",
+  "painting.bfdragons.kac.author": "Malwreit",
+  "painting.bfdragons.glorp.author": "Malwreit",
+
   "block.bfdragons.steel_block": "Steel Block",
   "block.bfdragons.steel_stairs": "Steel Stairs",
   "block.bfdragons.steel_door": "Steel Door",
@@ -32,11 +43,6 @@
   "block.bfdragons.steel_trapdoor": "Steel Trapdoor",
   "block.bfdragons.steel_pressure_plate": "Steel Pressure Plate",
   "block.bfdragons.steel_button": "Steel Button",
-
-  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
-  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
-  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
-
 
   "block.bfdragons.grinder": "Grinder",
   "block.bfdragons.steel_lamp": "Steel Lamp",
