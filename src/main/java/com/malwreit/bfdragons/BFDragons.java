@@ -9,6 +9,7 @@ import com.malwreit.bfdragons.item.ModItemGroups;
 import com.malwreit.bfdragons.item.ModItems;
 import com.malwreit.bfdragons.potion.ModPotions;
 import com.malwreit.bfdragons.util.CultivatorUsageEvent;
+import com.malwreit.bfdragons.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
@@ -66,5 +67,7 @@ public class BFDragons implements ModInitializer {
 		CompostingChanceRegistry.INSTANCE.add(ModItems.ONION, 0.5f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.ONION_SEEDS, 0.25f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.BLUEBERRIES, 0.25f);
+
+		ModWorldGeneration.generateModWorldGen();
 	}
 }

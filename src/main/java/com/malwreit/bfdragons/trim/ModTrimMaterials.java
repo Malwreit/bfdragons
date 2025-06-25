@@ -21,7 +21,7 @@ public class ModTrimMaterials {
 
     public static final RegistryKey<ArmorTrimMaterial> STEEL = RegistryKey.of(RegistryKeys.TRIM_MATERIAL, Identifier.of(BFDragons.MOD_ID, "steel"));
 
-    public static void boostrap(Registerable<ArmorTrimMaterial> registerable) {
+    public static void bootstrap(Registerable<ArmorTrimMaterial> registerable) {
         register(registerable, STEEL, Registries.ITEM.getEntry(ModItems.STEEL), Style.EMPTY.withColor(TextColor.parse("#4d2800").getOrThrow()), 0.3f);
     }
 
