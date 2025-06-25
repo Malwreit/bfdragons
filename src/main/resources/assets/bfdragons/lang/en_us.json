@@ -33,6 +33,10 @@
   "block.bfdragons.steel_pressure_plate": "Steel Pressure Plate",
   "block.bfdragons.steel_button": "Steel Button",
 
+  "item.minecraft.potion.effect.slimey_potion": "Slimey Potion",
+  "item.minecraft.splash_potion.effect.slimey_potion": "Slimey Splash Potion",
+  "item.minecraft.lingering_potion.effect.slimey_potion": "Slimey Lingering Potion",
+
 
   "block.bfdragons.grinder": "Grinder",
   "block.bfdragons.steel_lamp": "Steel Lamp",

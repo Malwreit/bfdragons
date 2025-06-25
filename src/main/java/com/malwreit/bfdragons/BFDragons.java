@@ -6,14 +6,17 @@ import com.malwreit.bfdragons.effect.ModEffects;
 import com.malwreit.bfdragons.item.ModFuelComponents;
 import com.malwreit.bfdragons.item.ModItemGroups;
 import com.malwreit.bfdragons.item.ModItems;
+import com.malwreit.bfdragons.potion.ModPotions;
 import com.malwreit.bfdragons.util.CultivatorUsageEvent;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.passive.SheepEntity;
+import net.minecraft.potion.Potions;
 import net.minecraft.text.Text;
 import net.minecraft.util.ActionResult;
 import org.slf4j.Logger;
@@ -31,8 +34,18 @@ public class BFDragons implements ModInitializer {
 		ModFuelComponents.registerFuelComponents();
 		ModDataComponentsTypes.registerDataComponentTypes();
 		ModEffects.registerEffects();
+		ModPotions.registerPotions();
 
 		PlayerBlockBreakEvents.BEFORE.register(new CultivatorUsageEvent());
+		FabricBrewingRecipeRegistryBuilder.BUILD.register(
+				builder -> {
+					builder.registerPotionRecipe(
+							Potions.AWKWARD,
+							ModItems.CRAM,
+							ModPotions.SLIMEY_POTION
+					);
+				}
+		);
 
 		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
 			if (entity instanceof SheepEntity sheepEntity && !world.isClient) {
