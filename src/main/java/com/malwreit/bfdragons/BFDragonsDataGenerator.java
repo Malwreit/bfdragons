@@ -1,6 +1,7 @@
 package com.malwreit.bfdragons;
 
 import com.malwreit.bfdragons.datagen.*;
+import com.malwreit.bfdragons.enchantment.ModEnchantments;
 import com.malwreit.bfdragons.trim.ModTrimMaterials;
 import com.malwreit.bfdragons.trim.ModTrimPatterns;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -25,5 +26,6 @@ public class BFDragonsDataGenerator implements DataGeneratorEntrypoint {
 	public void buildRegistry(RegistryBuilder registryBuilder) {
 		registryBuilder.addRegistry(RegistryKeys.TRIM_MATERIAL, ModTrimMaterials::boostrap);
 		registryBuilder.addRegistry(RegistryKeys.TRIM_PATTERN, ModTrimPatterns::bootstrap);
+		registryBuilder.addRegistry(RegistryKeys.ENCHANTMENT, ModEnchantments::bootstrap);
 	}
 }
