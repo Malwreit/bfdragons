@@ -13,4 +13,8 @@ public class ModFoodComponents {
     public static final FoodComponent ONION = new FoodComponent.Builder()
             .nutrition(6)
             .saturationModifier(1f).build();
+
+    public static final FoodComponent BLUEBERRIES = new FoodComponent.Builder()
+            .nutrition(2)
+            .saturationModifier(0.3f).build();
 }

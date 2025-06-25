@@ -1,6 +1,7 @@
 package com.malwreit.bfdragons.datagen;
 
 import com.malwreit.bfdragons.block.ModBlocks;
+import com.malwreit.bfdragons.block.custom.BlueberryBushBlock;
 import com.malwreit.bfdragons.block.custom.OnionCropBlock;
 import com.malwreit.bfdragons.block.custom.SteelLampBlock;
 import com.malwreit.bfdragons.item.ModItems;
@@ -37,6 +38,7 @@ public class ModModelProvider extends FabricModelProvider {
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(SteelLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
 
         blockStateModelGenerator.registerCrop(ModBlocks.ONION_CROP, OnionCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
+        blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BLUEBERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED, BlueberryBushBlock.AGE,0, 1, 2, 3);
     }
 
     @Override

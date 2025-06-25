@@ -65,5 +65,6 @@ public class BFDragons implements ModInitializer {
 
 		CompostingChanceRegistry.INSTANCE.add(ModItems.ONION, 0.5f);
 		CompostingChanceRegistry.INSTANCE.add(ModItems.ONION_SEEDS, 0.25f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.BLUEBERRIES, 0.25f);
 	}
 }

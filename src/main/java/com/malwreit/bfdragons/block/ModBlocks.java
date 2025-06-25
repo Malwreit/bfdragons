@@ -1,6 +1,7 @@
 package com.malwreit.bfdragons.block;
 
 import com.malwreit.bfdragons.BFDragons;
+import com.malwreit.bfdragons.block.custom.BlueberryBushBlock;
 import com.malwreit.bfdragons.block.custom.GrinderBlock;
 import com.malwreit.bfdragons.block.custom.OnionCropBlock;
 import com.malwreit.bfdragons.block.custom.SteelLampBlock;
@@ -128,6 +129,10 @@ public class ModBlocks {
                 .pistonBehavior(PistonBehavior.DESTROY)
                 .mapColor(MapColor.YELLOW)
         )
+    );
+
+    public static final Block BLUEBERRY_BUSH = registerBlockWithoutBlockItem("blueberry_bush",
+        new BlueberryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH))
     );
 
 

@@ -111,6 +111,10 @@ public class ModItems {
             new AliasedBlockItem(ModBlocks.ONION_CROP, new Item.Settings())
     );
 
+    public static final Item BLUEBERRIES = registerItem("blueberries",
+            new AliasedBlockItem(ModBlocks.BLUEBERRY_BUSH, new Item.Settings().food(ModFoodComponents.BLUEBERRIES))
+    );
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(com.malwreit.bfdragons.BFDragons.MOD_ID, name), item);
     }

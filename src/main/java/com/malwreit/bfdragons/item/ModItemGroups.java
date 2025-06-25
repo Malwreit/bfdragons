@@ -39,6 +39,7 @@ public class ModItemGroups {
                         entries.add(ModItems.BAR_BRAWL_MUSIC_DISC);
                         entries.add(ModItems.ONION_SEEDS);
                         entries.add(ModItems.ONION);
+                        entries.add(ModItems.BLUEBERRIES);
                     }).build());
 
     public static final ItemGroup BFDRAGONS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
