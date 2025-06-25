@@ -1,6 +1,7 @@
 package com.malwreit.bfdragons.datagen;
 
 import com.malwreit.bfdragons.block.ModBlocks;
+import com.malwreit.bfdragons.block.custom.OnionCropBlock;
 import com.malwreit.bfdragons.block.custom.SteelLampBlock;
 import com.malwreit.bfdragons.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -34,12 +35,15 @@ public class ModModelProvider extends FabricModelProvider {
         Identifier lampOnIdentifier = blockStateModelGenerator.createSubModel(ModBlocks.STEEL_LAMP, "_on", Models.CUBE_ALL, TextureMap::all);
         blockStateModelGenerator.blockStateCollector.accept(VariantsBlockStateSupplier.create(ModBlocks.STEEL_LAMP)
                 .coordinate(BlockStateModelGenerator.createBooleanModelMap(SteelLampBlock.CLICKED, lampOnIdentifier, lampOffIdentifier)));
+
+        blockStateModelGenerator.registerCrop(ModBlocks.ONION_CROP, OnionCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.STEEL, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRAM, Models.GENERATED);
+        itemModelGenerator.register(ModItems.ONION, Models.GENERATED);
         itemModelGenerator.register(ModItems.STEEL_CULTIVATOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.FINEWOOD, Models.GENERATED);
 

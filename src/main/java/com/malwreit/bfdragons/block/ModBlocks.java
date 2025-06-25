@@ -2,10 +2,12 @@ package com.malwreit.bfdragons.block;
 
 import com.malwreit.bfdragons.BFDragons;
 import com.malwreit.bfdragons.block.custom.GrinderBlock;
+import com.malwreit.bfdragons.block.custom.OnionCropBlock;
 import com.malwreit.bfdragons.block.custom.SteelLampBlock;
 import com.malwreit.bfdragons.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.piston.PistonBehavior;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -116,7 +118,25 @@ public class ModBlocks {
                 .luminance(state -> state.get(SteelLampBlock.CLICKED) ? 15 : 0)
         )
     );
+
+    public static final Block ONION_CROP = registerBlockWithoutBlockItem("onion_crop",
+        new OnionCropBlock(AbstractBlock.Settings.create()
+                .ticksRandomly()
+                .breakInstantly()
+                .noCollision()
+                .sounds(BlockSoundGroup.CROP)
+                .pistonBehavior(PistonBehavior.DESTROY)
+                .mapColor(MapColor.YELLOW)
+        )
+    );
+
+
     private static Block registerBlock(String name, Block block) {
+        registerBlockItem(name, block);
+        return Registry.register(Registries.BLOCK, Identifier.of(BFDragons.MOD_ID, name), block);
+    }
+
+    private static Block registerBlockWithoutBlockItem(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.of(BFDragons.MOD_ID, name), block);
     }

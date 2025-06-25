@@ -1,6 +1,7 @@
 package com.malwreit.bfdragons.item;
 
 import com.malwreit.bfdragons.BFDragons;
+import com.malwreit.bfdragons.block.ModBlocks;
 import com.malwreit.bfdragons.item.custom.HammerItem;
 import com.malwreit.bfdragons.item.custom.ModArmorItem;
 import com.malwreit.bfdragons.sound.ModSounds;
@@ -100,6 +101,14 @@ public class ModItems {
                 .jukeboxPlayable(ModSounds.BAR_BRAWL_KEY)
                 .maxCount(1)
         )
+    );
+
+    public static final Item ONION = registerItem("onion",
+            new Item(new Item.Settings().food(ModFoodComponents.ONION))
+    );
+
+    public static final Item ONION_SEEDS = registerItem("onion_seeds",
+            new AliasedBlockItem(ModBlocks.ONION_CROP, new Item.Settings())
     );
 
     private static Item registerItem(String name, Item item) {

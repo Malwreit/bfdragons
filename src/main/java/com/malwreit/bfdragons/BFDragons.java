@@ -13,6 +13,7 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.event.player.AttackEntityCallback;
 import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
+import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -61,5 +62,8 @@ public class BFDragons implements ModInitializer {
 
 			return ActionResult.PASS;
 		});
+
+		CompostingChanceRegistry.INSTANCE.add(ModItems.ONION, 0.5f);
+		CompostingChanceRegistry.INSTANCE.add(ModItems.ONION_SEEDS, 0.25f);
 	}
 }
