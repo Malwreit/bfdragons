@@ -2,6 +2,7 @@ package com.malwreit.bfdragons;
 
 import com.malwreit.bfdragons.block.ModBlocks;
 import com.malwreit.bfdragons.component.ModDataComponentsTypes;
+import com.malwreit.bfdragons.effect.ModEffects;
 import com.malwreit.bfdragons.item.ModFuelComponents;
 import com.malwreit.bfdragons.item.ModItemGroups;
 import com.malwreit.bfdragons.item.ModItems;
@@ -29,6 +30,7 @@ public class BFDragons implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 		ModFuelComponents.registerFuelComponents();
 		ModDataComponentsTypes.registerDataComponentTypes();
+		ModEffects.registerEffects();
 
 		PlayerBlockBreakEvents.BEFORE.register(new CultivatorUsageEvent());
 
