@@ -2,7 +2,9 @@ package com.malwreit.bfdragons.world;
 
 import com.malwreit.bfdragons.BFDragons;
 import com.malwreit.bfdragons.block.ModBlocks;
+import com.malwreit.bfdragons.block.custom.BlueberryBushBlock;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -26,6 +28,8 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> FINEWOOD_KEY = registerKey("finewood");
 
+    public static final RegistryKey<ConfiguredFeature<?, ?>> BLUEBERRY_BUSH_KEY = registerKey("blueberry_bush");
+
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
         RuleTest stoneReplaceable = new TagMatchRuleTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -45,6 +49,9 @@ public class ModConfiguredFeatures {
                 new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3),
 
                 new TwoLayersFeatureSize(1,0,2)).dirtProvider(BlockStateProvider.of(Blocks.STONE)).build());
+
+        register(context, BLUEBERRY_BUSH_KEY, Feature.RANDOM_PATCH,
+                ConfiguredFeatures.createRandomPatchFeatureConfig(Feature.SIMPLE_BLOCK, new SimpleBlockFeatureConfig(BlockStateProvider.of(ModBlocks.BLUEBERRY_BUSH.getDefaultState().with(SweetBerryBushBlock.AGE, Integer.valueOf(3)))), List.of(Blocks.GRASS_BLOCK)));
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
