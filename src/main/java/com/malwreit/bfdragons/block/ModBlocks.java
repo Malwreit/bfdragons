@@ -1,10 +1,7 @@
 package com.malwreit.bfdragons.block;
 
 import com.malwreit.bfdragons.BFDragons;
-import com.malwreit.bfdragons.block.custom.BlueberryBushBlock;
-import com.malwreit.bfdragons.block.custom.GrinderBlock;
-import com.malwreit.bfdragons.block.custom.OnionCropBlock;
-import com.malwreit.bfdragons.block.custom.SteelLampBlock;
+import com.malwreit.bfdragons.block.custom.*;
 import com.malwreit.bfdragons.sound.ModSounds;
 import com.malwreit.bfdragons.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -182,7 +179,7 @@ public class ModBlocks {
     );
 
     public static final Block FINEWOOD_SAPLING = registerBlock("finewood_sapling",
-            new SaplingBlock(ModSaplingGenerators.FINEWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)
+            new ModSaplingBlock(ModSaplingGenerators.FINEWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING), Blocks.STONE
             )
     );
 

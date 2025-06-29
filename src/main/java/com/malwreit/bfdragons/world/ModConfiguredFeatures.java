@@ -2,6 +2,7 @@ package com.malwreit.bfdragons.world;
 
 import com.malwreit.bfdragons.BFDragons;
 import com.malwreit.bfdragons.block.ModBlocks;
+import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -43,7 +44,7 @@ public class ModConfiguredFeatures {
                 BlockStateProvider.of(ModBlocks.FINEWOOD_LEAVES),
                 new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3),
 
-                new TwoLayersFeatureSize(1,0,2)).build());
+                new TwoLayersFeatureSize(1,0,2)).dirtProvider(BlockStateProvider.of(Blocks.STONE)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {
