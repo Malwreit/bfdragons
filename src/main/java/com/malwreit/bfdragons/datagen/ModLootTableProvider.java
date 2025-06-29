@@ -7,13 +7,10 @@ import com.malwreit.bfdragons.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.SweetBerryBushBlock;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemConvertible;
-import net.minecraft.item.Items;
 import net.minecraft.loot.LootPool;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.condition.BlockStatePropertyLootCondition;
@@ -49,6 +46,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.GRINDER);
 
         addDrop(ModBlocks.SILVER_ORE, multipleOreDrops(ModBlocks.SILVER_ORE, ModItems.SILVER,4,6));
+
+        addDrop(ModBlocks.FINEWOOD_LOG);
+        addDrop(ModBlocks.STRIPPED_FINEWOOD_LOG);
+        addDrop(ModBlocks.FINEWOOD_WOOD);
+        addDrop(ModBlocks.STRIPPED_FINEWOOD_WOOD);
+        addDrop(ModBlocks.FINEWOOD_PLANKS);
+        addDrop(ModBlocks.FINEWOOD_SAPLING);
+        addDrop(ModBlocks.FINEWOOD_LEAVES, leavesDrops(ModBlocks.FINEWOOD_LEAVES, ModBlocks.FINEWOOD_SAPLING, 0.625f));
 
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);
         this.addDrop(ModBlocks.BLUEBERRY_BUSH, (block) -> (LootTable.Builder)

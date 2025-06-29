@@ -9,7 +9,12 @@ import net.minecraft.registry.tag.BlockTags;
 import net.minecraft.structure.rule.RuleTest;
 import net.minecraft.structure.rule.TagMatchRuleTest;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.ConstantIntProvider;
 import net.minecraft.world.gen.feature.*;
+import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
+import net.minecraft.world.gen.foliage.BlobFoliagePlacer;
+import net.minecraft.world.gen.stateprovider.BlockStateProvider;
+import net.minecraft.world.gen.trunk.StraightTrunkPlacer;
 
 import java.util.List;
 
@@ -17,6 +22,8 @@ public class ModConfiguredFeatures {
 
     public static final RegistryKey<ConfiguredFeature<?, ?>> SILVER_ORE_KEY = registerKey("silver_ore");
     public static final RegistryKey<ConfiguredFeature<?, ?>> DEEPSLATE_SILVER_ORE_KEY = registerKey("deepslate_silver_ore");
+
+    public static final RegistryKey<ConfiguredFeature<?, ?>> FINEWOOD_KEY = registerKey("finewood");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
 
@@ -29,6 +36,14 @@ public class ModConfiguredFeatures {
 
         register(context, SILVER_ORE_KEY, Feature.ORE, new OreFeatureConfig(overworldSilverOres, 12));
 
+        register(context, FINEWOOD_KEY, Feature.TREE, new TreeFeatureConfig.Builder(
+                BlockStateProvider.of(ModBlocks.FINEWOOD_LOG),
+                new StraightTrunkPlacer(5,6,3),
+
+                BlockStateProvider.of(ModBlocks.FINEWOOD_LEAVES),
+                new BlobFoliagePlacer(ConstantIntProvider.create(4), ConstantIntProvider.create(1), 3),
+
+                new TwoLayersFeatureSize(1,0,2)).build());
     }
 
     public static RegistryKey<ConfiguredFeature<?, ?>> registerKey(String name) {

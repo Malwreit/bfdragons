@@ -1,5 +1,6 @@
 package com.malwreit.bfdragons.datagen;
 
+import com.malwreit.bfdragons.block.ModBlocks;
 import com.malwreit.bfdragons.item.ModItems;
 import com.malwreit.bfdragons.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -41,5 +42,14 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.TRIM_TEMPLATES)
                 .add(ModItems.IRON_HILLS_SMITHING_TEMPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.FINEWOOD_LOG.asItem())
+                .add(ModBlocks.FINEWOOD_WOOD.asItem())
+                .add(ModBlocks.STRIPPED_FINEWOOD_LOG.asItem())
+                .add(ModBlocks.STRIPPED_FINEWOOD_WOOD.asItem());
+
+        getOrCreateTagBuilder(ItemTags.PLANKS)
+                .add(ModBlocks.FINEWOOD_PLANKS.asItem());
     }
 }

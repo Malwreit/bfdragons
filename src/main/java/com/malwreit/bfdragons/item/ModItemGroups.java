@@ -40,7 +40,7 @@ public class ModItemGroups {
                         entries.add(ModItems.ONION_SEEDS);
                         entries.add(ModItems.ONION);
                         entries.add(ModItems.BLUEBERRIES);
-                        
+
                         entries.add(ModItems.SILVER);
                     }).build());
 
@@ -65,6 +65,14 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.SILVER_ORE);
                         entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
+
+                        entries.add(ModBlocks.FINEWOOD_LOG);
+                        entries.add(ModBlocks.STRIPPED_FINEWOOD_LOG);
+                        entries.add(ModBlocks.FINEWOOD_WOOD);
+                        entries.add(ModBlocks.STRIPPED_FINEWOOD_WOOD);
+                        entries.add(ModBlocks.FINEWOOD_PLANKS);
+                        entries.add(ModBlocks.FINEWOOD_LEAVES);
+                        entries.add(ModBlocks.FINEWOOD_SAPLING);
                     }).build());
 
     public static void registerItemGroups() {

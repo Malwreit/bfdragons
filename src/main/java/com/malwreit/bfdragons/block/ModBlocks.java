@@ -6,6 +6,7 @@ import com.malwreit.bfdragons.block.custom.GrinderBlock;
 import com.malwreit.bfdragons.block.custom.OnionCropBlock;
 import com.malwreit.bfdragons.block.custom.SteelLampBlock;
 import com.malwreit.bfdragons.sound.ModSounds;
+import com.malwreit.bfdragons.world.tree.ModSaplingGenerators;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
 import net.minecraft.block.piston.PistonBehavior;
@@ -149,6 +150,42 @@ public class ModBlocks {
                 .sounds(BlockSoundGroup.STONE)
         )
     );
+
+    public static final Block FINEWOOD_LOG = registerBlock("finewood_log",
+        new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_LOG)
+        )
+    );
+
+    public static final Block STRIPPED_FINEWOOD_LOG = registerBlock("stripped_finewood_log",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_LOG)
+            )
+    );
+
+    public static final Block FINEWOOD_WOOD = registerBlock("finewood_wood",
+        new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_WOOD)
+        )
+    );
+
+    public static final Block STRIPPED_FINEWOOD_WOOD = registerBlock("stripped_finewood_wood",
+        new PillarBlock(AbstractBlock.Settings.copy(Blocks.STRIPPED_OAK_WOOD)
+        )
+    );
+
+    public static final Block FINEWOOD_PLANKS = registerBlock("finewood_planks",
+            new PillarBlock(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)
+            )
+    );
+
+    public static final Block FINEWOOD_LEAVES = registerBlock("finewood_leaves",
+            new LeavesBlock(AbstractBlock.Settings.copy(Blocks.OAK_LEAVES)
+            )
+    );
+
+    public static final Block FINEWOOD_SAPLING = registerBlock("finewood_sapling",
+            new SaplingBlock(ModSaplingGenerators.FINEWOOD, AbstractBlock.Settings.copy(Blocks.OAK_SAPLING)
+            )
+    );
+
 
 
     private static Block registerBlock(String name, Block block) {

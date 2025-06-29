@@ -61,6 +61,14 @@
   "block.bfdragons.silver_ore": "Silver Ore",
   "block.bfdragons.deepslate_silver_ore": "Deepslate silver Ore",
 
+  "block.bfdragons.finewood_log": "Finewood Log",
+  "block.bfdragons.stripped_finewood_log": "Stripped Finewood Log",
+  "block.bfdragons.finewood_wood": "Finewood Wood",
+  "block.bfdragons.stripped_finewood_wood": "Stripped Finewood Wood",
+  "block.bfdragons.finewood_planks": "Finewood Planks",
+  "block.bfdragons.finewood_leaves": "Finewood Leaves",
+  "block.bfdragons.finewood_sapling": "Finewood Sapling",
+
 
   "effect.bfdragons.slimey": "Slimey",
 

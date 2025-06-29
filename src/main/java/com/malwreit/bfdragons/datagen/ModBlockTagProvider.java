@@ -31,5 +31,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.STEEL_BLOCK)
                 .addTag(BlockTags.NEEDS_IRON_TOOL);
 
+        getOrCreateTagBuilder(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.FINEWOOD_LOG)
+                .add(ModBlocks.FINEWOOD_WOOD)
+                .add(ModBlocks.STRIPPED_FINEWOOD_LOG)
+                .add(ModBlocks.STRIPPED_FINEWOOD_WOOD);
     }
 }

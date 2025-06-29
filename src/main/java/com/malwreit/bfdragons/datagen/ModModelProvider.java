@@ -42,6 +42,12 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SILVER_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_SILVER_ORE);
+
+        blockStateModelGenerator.registerLog(ModBlocks.FINEWOOD_LOG).log(ModBlocks.FINEWOOD_LOG).wood(ModBlocks.FINEWOOD_WOOD);
+        blockStateModelGenerator.registerLog(ModBlocks.STRIPPED_FINEWOOD_LOG).log(ModBlocks.STRIPPED_FINEWOOD_LOG).wood(ModBlocks.STRIPPED_FINEWOOD_WOOD);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.FINEWOOD_PLANKS);
+        blockStateModelGenerator.registerSingleton(ModBlocks.FINEWOOD_LEAVES, TexturedModel.LEAVES);
+        blockStateModelGenerator.registerTintableCrossBlockState(ModBlocks.FINEWOOD_SAPLING, BlockStateModelGenerator.TintType.NOT_TINTED);
     }
 
     @Override
@@ -67,5 +73,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.SILVER, Models.GENERATED);
+        itemModelGenerator.register(ModBlocks.FINEWOOD_SAPLING.asItem(), Models.GENERATED);
     }
 }
