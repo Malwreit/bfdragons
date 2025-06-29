@@ -135,6 +135,21 @@ public class ModBlocks {
         new BlueberryBushBlock(AbstractBlock.Settings.copy(Blocks.SWEET_BERRY_BUSH))
     );
 
+    public static final Block SILVER_ORE = registerBlock("silver_ore",
+        new Block(AbstractBlock.Settings.create()
+                .strength(3f, 3f)
+                .requiresTool()
+                .sounds(BlockSoundGroup.STONE)
+        )
+    );
+    public static final Block DEEPSLATE_SILVER_ORE = registerBlock("deepslate_silver_ore",
+        new Block(AbstractBlock.Settings.create()
+                .strength(3f, 3f)
+                .requiresTool()
+                .sounds(BlockSoundGroup.STONE)
+        )
+    );
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

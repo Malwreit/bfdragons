@@ -39,6 +39,9 @@ public class ModModelProvider extends FabricModelProvider {
 
         blockStateModelGenerator.registerCrop(ModBlocks.ONION_CROP, OnionCropBlock.AGE, 0, 1, 2, 3, 4, 5, 6);
         blockStateModelGenerator.registerTintableCrossBlockStateWithStages(ModBlocks.BLUEBERRY_BUSH, BlockStateModelGenerator.TintType.NOT_TINTED, BlueberryBushBlock.AGE,0, 1, 2, 3);
+
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SILVER_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_SILVER_ORE);
     }
 
     @Override
@@ -62,5 +65,7 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.STEEL_HORSE_ARMOR, Models.GENERATED);
         itemModelGenerator.register(ModItems.IRON_HILLS_SMITHING_TEMPLATE, Models.GENERATED);
         itemModelGenerator.register(ModItems.BAR_BRAWL_MUSIC_DISC, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.SILVER, Models.GENERATED);
     }
 }

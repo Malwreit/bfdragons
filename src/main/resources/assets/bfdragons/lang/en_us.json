@@ -30,6 +30,8 @@
   "item.bfdragons.onion": "Onion",
   "item.bfdragons.blueberries": "Blueberries",
 
+  "item.bfdragons.silver": "Silver",
+
   "painting.bfdragons.trup.title": "Trup",
   "painting.bfdragons.kac.title": "Kac",
   "painting.bfdragons.glorp.title": "Glorp",
@@ -55,6 +57,10 @@
 
   "block.bfdragons.onion_seeds": "Onion Seeds",
   "block.bfdragons.blueberry_bush": "Blueberry Bush",
+
+  "block.bfdragons.silver_ore": "Silver Ore",
+  "block.bfdragons.deepslate_silver_ore": "Deepslate silver Ore",
+
 
   "effect.bfdragons.slimey": "Slimey",
 

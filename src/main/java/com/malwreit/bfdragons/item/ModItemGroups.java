@@ -40,6 +40,8 @@ public class ModItemGroups {
                         entries.add(ModItems.ONION_SEEDS);
                         entries.add(ModItems.ONION);
                         entries.add(ModItems.BLUEBERRIES);
+                        
+                        entries.add(ModItems.SILVER);
                     }).build());
 
     public static final ItemGroup BFDRAGONS_BLOCKS_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -60,6 +62,9 @@ public class ModItemGroups {
 
                         entries.add(ModBlocks.GRINDER);
                         entries.add(ModBlocks.STEEL_LAMP);
+
+                        entries.add(ModBlocks.SILVER_ORE);
+                        entries.add(ModBlocks.DEEPSLATE_SILVER_ORE);
                     }).build());
 
     public static void registerItemGroups() {

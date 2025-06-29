@@ -19,7 +19,6 @@ public class SlimeyEffect extends StatusEffect {
             entity.setVelocity(climbedVelocity.multiply(0.96D));
             return true;
         }
-
         return super.applyUpdateEffect(entity, amplifier);
     }
 
